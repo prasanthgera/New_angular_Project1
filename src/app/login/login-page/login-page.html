@@ -1,0 +1,23 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <input type="text" placeholder="Username" [(ngModel)]="username" name="username" required />
+
+      <div class="password-wrapper">
+        <input
+          [type]="showPassword ? 'text' : 'password'"
+          placeholder="Password"
+          [(ngModel)]="password"
+          name="password"
+          required
+        />
+        <span class="toggle-password" (click)="togglePassword()">
+          {{ showPassword ? '🙈' : '👁️' }}
+        </span>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>

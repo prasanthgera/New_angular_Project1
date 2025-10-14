@@ -1,0 +1,97 @@
+/* Full-screen wallpaper container */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background: url('https://www.shutterstock.com/image-vector/internet-digital-syber-security-technology-260nw-1518108761.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Login form wrapper */
+.login-box {
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* responsive max width */
+}
+
+/* Heading */
+.login-box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-box input:focus {
+  transform: scale(1.02);
+}
+
+/* Login button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #1e90ff, #0f78d4);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive for small screens */
+@media (max-width: 400px) {
+  .login-box {
+    max-width: 90%;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 10px; /* space for eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
